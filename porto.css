@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&family=Rubik+Bubbles&display=swap');
+ :root{
+            --header-height : 3rem;
+            --hue-color: 250;
+            --first-color : hsl(250, 69%, 61%);
+            --first-color-second : hsl(var(--hue-color),69%,61% ) ;
+            --first-color-alt : hsl(var(--hue-color),69%,61% );
+            --first-color-lighter :hsl(var(--hue-color),69%,61% ) ;
+            --title-color : hsl(var(--hue-color),69%,61% );
+            --text-color :hsl(var(--hue-color),69%,61% ) ;
+            --text-color-light : hsl(var(--hue-color),69%,61% );
+            --input-color :hsl(var(--hue-color),69%,61% ) ;
+            --body-color :hsl(var(--hue-color),69%,61% ) ;   
+            --container-color :  #fff;
+            
+                --body-font:     'Kolker Brush', cursive,'Rubik Bubbles', cursive;
+             /*.5rem = 8px,1rem=16px,1.5rem = 24px ...*/
+             --big-font-size: 2rem;
+             --h1-font-size: 1.5rem;
+             --h2-font-size: 1.25rem;
+             --h3-font-size: 1.125rem;
+             --normal-font-size: .938rem;
+             --small-font-size: .813rem;
+             --smaller-font-size:.75rem;
+             /* font weight*/
+             --font-medium:500;
+             --font-semi-blod:600;
+             /* margenes botton*/
+              /*.025rem=4px,.5rem=8px,.075rem=12 */
+             --mb-0-25: .25rem;
+             --mb-0-5: 0.5rem;
+             --mb-0-75: 0.75rem;
+             --mb-1: 1rem;
+             --mb-1-5: 1.5rem;
+             --mb-2: 2rem;
+             --mb-2-5: 2.5rem;
+             --mb-3: 3rem;
+            /* z index*/
+            --z-tooltip:10 ;
+            --z-fixed: 100; 
+            --z-modal: 100 ;
+         /* font sizefor large devices*/
+         @media screen  and{min-width: 968px;
+          :root{
+            --big-font-size:3rema;
+            --h1-font-size:2.25rem;
+            --h2-font-size:1.5rem;
+            --h3-font-size:1.25rem;
+            --normal-font-size:1rem;
+            --small-font-size:.875rem;
+            --smaller-font-size:.813rem;
+          }  
+         }
+         
+         /* base*/
+
+         *{
+                    box-sizing:border-box;
+                    padding : 0 ;
+                    margin:0;
+                    }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            margin: 0 0 var(--header-height)0 ;
+            font-family: var(--body-font);
+            background-color: var(--body-color) ;
+            color: var(--text-color);
+            }
+        h1,h2,h3,h4{
+            color:var(--title-color);
+            font-weight: var(--font-semi-blod);
+
+        }
+        ul{
+            list-style: none;
+
+        }
+        a {
+            text-decoration: none;
+
+        }
+        img{
+            max-width: 100;
+            height: auto;
+        }
+        /* reusable css classes*/
+        .section{
+            padding: 2rem0  4rem;
+
+        }
+        .section{
+            font-size: var(--h1-font-size);
+
+        }
+        .section_title{
+            font-size: var(--h1-font-size);
+        }
+        .section_subtitle{
+            display: block;
+            font-size: var(--small-font-size);
+            margin-bottom: var(--mb-3);
+            }
+        .section_title
+        .section_subtitle{
+            text-align: center;
+
+        }  
+        /*layout*/
+        .container{
+            max-width: 768px;
+            margin-left: var(--mb-1-5);
+            margin-right: var(--mb-1-5);
+            }
+        .grid{
+            display: grid;
+            gap: 1.5rem;
+        }
+        } 
